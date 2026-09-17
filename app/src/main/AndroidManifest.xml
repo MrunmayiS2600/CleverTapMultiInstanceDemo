@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".CleverTapMultiInstanceApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.CleverTapMultiInstance">
+
+        <!--
+            Project 1 = the DEFAULT CleverTap instance.
+            Real values come from local.properties (gitignored) via
+            manifestPlaceholders in app/build.gradle.kts - see local.properties.example.
+        -->
+        <meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="${cleverTapProject1AccountId}" />
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="${cleverTapProject1Token}" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
