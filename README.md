@@ -12,9 +12,7 @@ sending data to two separate CleverTap accounts with different `onUserLogin` ide
   via `PROJECT2_ACCOUNT_ID` / `PROJECT2_ACCOUNT_TOKEN`.
   Replace with a second, real CleverTap account's credentials.
 
-Both are placeholders — I don't have CleverTap dashboard access from this session
-(the CleverTap MCP connector needs to be authorized first), so I couldn't create or
-look up real account IDs/tokens for either project.
+Both are placeholders 
 
 ## onUserLogin behavior
 
